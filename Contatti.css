@@ -74,6 +74,10 @@ footer {
     display: inline-grid;
   }
 
+  .box{
+    padding: 30px;
+  }
+
   footer {
     position: inherit;
   }
