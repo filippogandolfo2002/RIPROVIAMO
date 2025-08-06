@@ -1,0 +1,164 @@
+/* Google Fonts Link */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  background-color: #ffffff;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: #066424;
+  font-size: 25px;
+  line-height: 80px;
+  /* padding: 0 100px; */
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 24%;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #066424;
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  transition: 0s;
+}
+
+a:hover,
+.active {
+  transition: 0s;
+  background: rgb(6, 100, 36);
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.logo-azienda {
+  position: relative;
+  top: auto;
+  height: 75px;
+  padding: 5px;
+  float: left;
+  margin-left: 5%;
+}
+
+.checkbtn {
+  font-size: 40px;
+  color: #066424;
+  float: right;
+  line-height: 80px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/* FOOTER*/
+
+footer {
+  background-color: #066424;
+  margin-top: 30px;
+  width: 100%;
+  /* position: absolute; */
+  bottom: 0;
+  padding: 30px;
+}
+.footer-content {
+  /* padding: 30px; */
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1050px) {
+  label.logo {
+    padding-left: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+/* Responsive media query code for small screen */
+@media (max-width: 890px) {
+  .checkbtn {
+    display: block;
+  }
+  label.logo {
+    font-size: 22px;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 60px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    /* transition: 0.5s; */
+    background: rgb(6, 100, 36);
+    border-radius: 40px;
+    color: #ffffff;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* FOOTER */
+  .footer-links {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .footer-links a {
+    display: block;
+    text-align: center;
+  }
+}

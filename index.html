@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <!-- Checkbox for toggling menu -->
+      <input type="checkbox" id="check" />
+      <!-- Menu icon -->
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!-- Site logo -->
+
+      <img src="./img/LOGO az ostara.png" class="logo-azienda" />
+      <!-- Navigation links -->
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html#chi siamo">Chi siamo</a></li>
+        <li>
+          <a href="Prodotti.html">Prodotti</a>
+        </li>
+        <li><a href="#">Idee regalo</a></li>
+        <li><a href="Contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <!-- PRIMA SECTION -->
+    <section class="grande">
+      <div class="primo">
+        <h1>AZIENDA AGRICOLA OSTARA</h1>
+        <h2>
+          Coltivare con passione, e per passione.<br />
+          Rispetto per la natura della biodiversità. <br />
+          Lotta integrata, residuo Zero.
+        </h2>
+      </div>
+    </section>
+
+    <div id="chi siamo" class="explore">
+      <div class="explore-content">
+        <p>
+          L'azienda agricola Ostara si impegna a portare nelle tavole dei
+          consumatori solo prodotti sani e genuini, coltivati e lavorati
+          rispettando la tradizione e l'ambiente. <br />
+          Partendo dalla coltivazione di materia prime nel fertile Delta del Po,
+          raccolte e lavorate in modo da preservare sapori, profumi e valori
+          nutrizionali con il rispetto della natura, la passione di chi coltiva
+          la terra e di chi la abita.
+          <br />
+          Prodotti pronti ideali per le classiche ricette!
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#" onclick="showPage('about')">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Termini di servizio</a>
+          <a href="#" onclick="showPage('contact')">Contatti</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

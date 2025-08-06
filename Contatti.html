@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="new.css" />
+
+    <link rel="stylesheet" href="Contatti.css" />
+  </head>
+  <body>
+    <nav>
+      <!-- Checkbox for toggling menu -->
+      <input type="checkbox" id="check" />
+      <!-- Menu icon -->
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!-- Site logo -->
+
+      <img src="../img/LOGO az ostara.png" class="logo-azienda" />
+      <!-- Navigation links -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#chi siamo">Chi siamo</a></li>
+        <li>
+          <a href="Prodotti.html">Prodotti</a>
+        </li>
+        <li><a href="#">Idee regalo</a></li>
+        <li><a class="active" href="Contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTATTI -->
+    <section>
+      <div class="box first">
+        <h3>Privati</h3>
+        <p>
+          Sei interessato a uno dei nostri prodotti? <br />
+          <br />Contattaci sui nostri social o al numero:
+        </p>
+
+        <a href="">+39 389 678 8730</a>
+      </div>
+
+      <div class="box second">
+        <h3>Ingrosso</h3>
+        <p>
+          Sei un azienda o desideri effettuare un ordine all'ingrosso?
+          <br />
+          <br />Contattaci qui:
+        </p>
+        <a href="">+39 349 273 4309</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#" onclick="showPage('about')">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Termini di servizio</a>
+          <a href="#" onclick="showPage('contact')">Contatti</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
